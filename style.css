@@ -19,14 +19,14 @@ body::before{
     left: 0;
     width: 100%;
     height: 100vh;   
-    background: rgba(30,30,47,0.5);
+    background: rgba(17,26,25,0.6);
     backdrop-filter: blur(2px);
     z-index: -1;
 }
 
 /* Navbar */
 .navbar {
-    background: #1e1e2f;
+    background: #111A19;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
@@ -39,7 +39,7 @@ body::before{
 .navbar .logo {
     font-size: 26px;
     font-weight: bold;
-    color: #00adb5; /* teal */
+    color: #F8D794; /* khaki accent */
 }
 
 .nav-links {
@@ -51,7 +51,7 @@ body::before{
 .nav-links a {
     text-decoration: none;
     font-weight: bold;
-    color: #00adb5;
+    color: #F8D794;
 }
 
 .nav-links a:hover {
@@ -61,7 +61,7 @@ body::before{
 /* Mobile Menu */
 .menu-toggle {
     font-size: 28px;
-    color: #00adb5;
+    color: #F8D794;
     cursor: pointer;
 }
 
@@ -69,7 +69,7 @@ body::before{
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #1e1e2f;
+        background: #111A19;
         position: absolute;
         top: 60px;
         right: 50px;
@@ -95,7 +95,7 @@ body::before{
 }
 
 .text {
-    color: #00adb5;
+    color: #F8D794;
 }
 
 /* Buttons & CV */
@@ -103,9 +103,9 @@ body::before{
 .btn-cv {
     margin-top: 15px;
     padding: 10px 22px;
-    border: 2px solid #00adb5;
+    border: 2px solid #F8D794;
     background: none;
-    color: #00adb5;
+    color: #F8D794;
     cursor: pointer;
     font-weight: bold;
     text-decoration: none;
@@ -114,8 +114,8 @@ body::before{
 
 .hero-section button:hover,
 .btn-cv:hover {
-    background: #00adb5;
-    color: #1e1e2f;
+    background: #F8D794;
+    color: #111A19;
 }
 
 /* Social Icons */
@@ -127,7 +127,7 @@ body::before{
 }
 
 .social-icons a {
-    color: #00adb5;
+    color: #F8D794;
     text-decoration: none;
     font-weight: bold;
 }
@@ -150,7 +150,7 @@ body::before{
 
 h2 {
     font-size: 50px;
-    color: #00adb5;
+    color: #F8D794;
     margin-bottom: 20px;
     text-align: center;
     font-family: 'Segoe UI';
@@ -169,19 +169,19 @@ h2 {
     width: 350px;
     height: auto;
     margin-left: 150px;
-    border: 2px solid #00adb5;
+    border: 2px solid #F8D794;
     border-radius: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-img img:hover{
     transform: translateY(-5px);
-    box-shadow: 0 0 15px #00adb5;
+    box-shadow: 0 0 15px #F8D794;
 }
 
 .about-content{
     padding: 50px 3rem;
-    background: rgba(30,30,47,0.4);
+    background: rgba(17,26,25,0.5);
     backdrop-filter: blur(4px);
     z-index: 1;
     border-radius: 1rem;
@@ -228,10 +228,10 @@ h2 {
     margin-top: 50px;
 }
 .skills-grid span {
-    background: #222;
+    background: #1a2726;
     padding: 20px 25px;
     border-radius: 5px;
-    border: 1px solid #00adb5;
+    border: 1px solid #F8D794;
 }
 
 /* Projects */
@@ -242,16 +242,16 @@ h2 {
 }
 .project-card {
     padding: 22px;
-    border: 1.5px solid #00adb5;
-    background: #1e1e2f;
+    border: 1.5px solid #F8D794;
+    background: #111A19;
     border-radius: 6px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 .project-card:hover {
     transform: translateY(-5px);
-    background: #16212f;
-    box-shadow: 0 0 15px #00adb5;
+    background: #0f1615;
+    box-shadow: 0 0 15px #F8D794;
 }
 
 /* Project Modals */
@@ -268,10 +268,10 @@ h2 {
 }
 
 .modal-content {
-    background-color: #00adb5;
+    background-color: #F8D794;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #1e1e2f;
+    border: 1px solid #111A19;
     width: 90%;
     max-width: 800px;
     color: #1e1e2f;
@@ -280,7 +280,7 @@ h2 {
 
 .modal .modal-content h3,
 .modal .modal-content p {
-    color: #1e1e2f;
+    color: #111A19;
     line-height: 1.8;
 }
 
@@ -288,7 +288,7 @@ h2 {
 .contact-section{
     text-align: center;
     padding: 50px 3rem;
-    background: rgba(30,30,47,0.4);
+    background: rgba(17,26,25,0.5);
     backdrop-filter: blur(4px);
     z-index: 1;
     border-radius: 1rem;
@@ -301,12 +301,34 @@ h2 {
     text-decoration: none;
 }
 
+/* GitHub Button in Modals */
+.github-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #111A19;
+    color: #F8D794;
+    border: 2px solid #111A19;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.github-btn:hover {
+    background: transparent;
+    color: #111A19;
+    border-color: #111A19;
+    box-shadow: inset 0 0 10px rgba(30,30,47,0.3);
+}
+
 /* Footer */
 .footer {
-    background: #1e1e2f;
+    background: #111A19;
     padding: 20px 50px;
     text-align: center;
-    border-top: 1px solid #00adb5;
+    border-top: 1px solid #F8D794;
 }
 
 .footer p {
