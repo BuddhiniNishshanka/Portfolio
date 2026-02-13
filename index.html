@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddhini Kawya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="logo">Buddhini</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="home" class="hero-section">
+
+        <div class="hero-content">
+            <h1>I'm <span class="text" id="typing"></span></h1>
+            <p id="role"></p>
+            <button onclick="scrollToSection('projects')">View Projects</button>
+            <a href="assets/Buddhini Nishshanka_CV.pdf" download class="btn-cv">Download CV</a>
+            
+            <div class="social-icons">
+                <a href="https://github.com/BuddhiniNishshanka" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/buddhini-nishshanka-91535b324" target="_blank">LinkedIn</a>
+                <a href="mailto:buddhinikawya24@gmail.com" target="_blank">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <h2>About Me</h2>
+
+        <div class="about">
+            <div class="about-img">
+                <img src="assets/Buddhini.jpeg" alt="Buddhini">    
+            </div>
+
+            <div class="about-content">
+                <p>Motivated Higher Diploma graduate in Computing and Software Engineering
+                    (Cardiff Metropolitan University - UK) with a strong foundation in 
+                    software development, databases, and IT systems.
+                    Skilled in web and mobile application development, UI/UX design, IT troubleshooting and data handling.
+                    Passionate about creating efficient, user-friendly solutions while applying strong problem-solving, organizational and teamwork skills. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>React</span><span>.NET</span><span>MySQL</span>
+            <span>Java</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card" onclick="openModal('modal1')">
+                <h3>FISCALIGN</h3> <br>
+                <p>National Budget Simulation Tool</p>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card" onclick="openModal('modal2')">
+                <h3>FitZone</h3> <br>
+                <p>Web Application for Fitness Center</p>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card" onclick="openModal('modal3')">
+                <h3> LuxeVista Resort App</h3> <br>
+                <p>Mobile Application</p>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card" onclick="openModal('modal4')">
+                <h3>The Gadget Hub</h3> <br>
+                <p>Service-oriented solution using .NET</p>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card" onclick="openModal('modal5')">
+                <h3>Automobile Data Analysis</h3> <br>
+                <p>Business Analytics project for the Ministry of Transport</p>
+            </div>
+
+             <!-- Project 6 -->
+            <div class="project-card" onclick="openModal('modal6')">
+                <h3>Pet Shop</h3> <br>
+                <p>Object Oriented System</p>
+            </div>            
+
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <h3>FISCALIGN</h3> <br>
+            <p>Led a 5-member team to develop FiscAlign, a web-based national budget simulation tool for Sri Lanka. Designed and implemented an interactive UI using SvelteKit, Tailwind CSS and Chart.js. Integrated budget template creation, constraint alerts and dynamic visualizations with offline-first architecture. Coordinated Hybrid Agile tasks, managed deadlines and contributed to frontend and system architecture development. </p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <h3>FitZone</h3> <br>
+            <p>Developed a full-stack fitness center web application featuring role-based dashboards for Admin, Staff, and Customers. Built responsive and userfriendly interfaces using HTML, CSS, and JavaScript and integrated backend functionality with PHP and MySQL to handle registrations, scheduling, queries and payments in real time. Implemented secure authentication and session management while conducting functional, usability and performance testing to ensure reliability, accessibility and cross-device compatibility. </p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content"> 
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <h3>LuxeVista Resort App</h3> <br>
+            <p>Developed a native Android application for LuxeVista Resort to enhance guest experience by enabling room and service bookings, managing reservations, implementing user authentication with personalized profiles, integrating a real-time database, designing intuitive UI/UX, providing notifications for promotions and events and ensuring quality through structured testing and documentation. </p>
+        </div>
+    </div>
+    
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <h3>The Gadget Hub</h3> <br>
+            <p>Developed a service-oriented computing solution using .NET. Features include modular architecture, API integration, and smooth UI.</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <h3>Automobile Data Analysis</h3> <br>
+            <p>Business Analytics project for the Ministry of Transport, Sri Lanka, analyzing transport system data to identify inefficiencies and recommend improvements. Included data collection, statistical analysis, visualization, and interpretation to support strategic decisions and enhance national transport efficiency.</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <h3>Pet Shop</h3> <br>
+            <p>Developed an Object-Oriented system for “The Paws Shop” pet supply store, implementing cashier and manager functionalities. Applied core OOP concepts including classes, objects, inheritance, encapsulation, abstraction and polymorphism. Enabled viewing, adding and searching pet supplies, managing user accounts and storing data in files, with clear UML design and user documentation. </p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:buddhinikawya24@gmail.com" target="_blank">buddhinikawya24@gmail.com</a></p>
+        <br>
+        <p>LinkedIn: 
+            <a href="https://www.linkedin.com/in/buddhini-nishshanka-91535b324" target="_blank">
+                www.linkedin.com/in/buddhini-nishshanka-91535b324
+            </a>
+        </p>
+        <br>
+        <p>GitHub: 
+            <a href="https://github.com/BuddhiniNishshanka" target="_blank">
+                https://github.com/BuddhiniNishshanka
+            </a>
+        </p>
+        <br>
+        <p>Contact Number: +94728087445</p>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Buddhini Nishshanka. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
